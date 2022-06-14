@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Shortcut Icon -->
+    <link rel=" shortcut icon" href="assets/logo.png" type="image/png">
+
+    <title>Edit Profile2</title>
+</head>
+
+<body>
+    <section class="home_bg">
+        <header style="background-color: white;">
+            <!-- Navbar -->
+
+            <!-- Container wrapper -->
+            <div class="row">
+                <!-- Toggle button -->
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <nav class="navbar navbar-expand-lg navbar-light nav_pos">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <!-- <i class="fas fa-bars"></i> -->
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand mt-lg-0" href="#">
+                            <!-- Navbar brand -->
+                            <img src="/assets/Find-Writers-Online-black-transparent.png" height="15" alt=""
+                                loading="lazy" class="logo_pos" />
+                        </a>
+                        <!-- Collapsible wrapper -->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <!-- Left links -->
+                            <ul class="navbar-nav  mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <img src="/assets/home-icon.png" alt="" class="nav_icon">
+                                    <a class="nav-link" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <img src="/assets/content-icon.png" alt="" class="nav_icon">
+                                    <a class="nav-link" href="#">Write Content</a>
+                                </li>
+                                <li class="nav-item">
+                                    <img src="/assets/contact-us-icon.png" alt="" class="nav_icon">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                            <!-- Left links -->
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="d-flex align-items-center justify-content-end avatar_postion">
+
+                        <!-- Notifications -->
+                        <a type="button" class="notification_btn position-relative">
+                            <img src="/assets/chat.png" alt="">
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                2
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+
+                        <a type="button" class="notification_btn position-relative">
+                            <img src="/assets/bell-icon.png" alt="">
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                2
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+
+                        <!-- Avatar Dropdown -->
+                        <div class="dropdown">
+                            <a class="dropdown-toggle d-flex align-items-center hidden-arrow avatar dropbtn"
+                                onclick="myFunction()">
+                                <img src="/assets/sarah.png" class="" height="25" alt="" loading="lazy" />
+                            </a>
+                            <ul id="myDropdown" class="dropdown-content">
+                                <li>
+                                    <a class="dropdown-item" href="#">My Articles</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">My Invitations</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">My Settings</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Email Preference</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right elements -->
+            </div>
+            <!-- Container wrapper -->
+
+            <!-- Navbar -->
+        </header>
+
+        <section class="dashboard">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="profile_section">
+                        <p class="txt_edit_profile"><a href="#editprofile" class="edit_profile">Edit Profile</a></p>
+
+                        <div class="text-center">
+                            <img src="/assets/sarah.png" alt="" class="profile_pic">
+                            <h6 class="profile_name">Sarah Loren</h6>
+                            <p class="profile_profession_text">Proffessional Writer</p>
+                        </div>
+
+                        <div class="profile_sect2">
+                            <div class="client_sect">
+                                <p class="profile_profession_text">client</p>
+                                <h6 class="semibold_16p">12</h6>
+                            </div>
+                            <div class="vertical_line"></div>
+                            <div class="articles_sect">
+                                <p class="profile_profession_text">Articles</p>
+                                <h6 class="semibold_16p">23</h6>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h6 class="profile_profession_text">WRITER’S RATING</h6>
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <span class="rating_level">Bronze</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="credit_sect">
+                            <h6>CREDIT BALANCE</h6>
+                            <div class="credit_box">
+                                <h6 class="money_text">$ 3.00</h6>
+                                <h6 class="add_money_text">Add Money</h6>
+                            </div>
+                        </div>
+
+                        <div class="messages_sect">
+                            <h6 class="profile_profession_text">MESSAGES</h6>
+                            <div class="row mt-4">
+                                <div class="col-lg-10">
+                                    <h6 class="add_money_text">View Messages</h6>
+                                </div>
+                                <div class="col-lg-2">
+                                    <span class="messages_span">2</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- General Profile Form -->
+                <div class="col-lg-8">
+                    <div class="article_section">
+                        <h3 class="quiz_head_text">Please submit data for verification</h3>
+                        <div class="upload_file_box mt-5">
+                            <h5 class="semi_600_text">Upload Your Photo *</h5>
+                            <p class="payment_blnc_p">Photo must contain a paper on which "FWO" should be written.</p>
+                            <form action="">
+                                <input type="file" id="myFile" name="filename">
+                              </form>
+                        </div>
+
+                        <div class="upload_file_box mt-5">
+                            <h5 class="semi_600_text">Upload Front License Image *</h5>
+                            <p class="payment_blnc_p">Photo must contain a paper on which "FWO" should be written.</p>
+                            <form action="">
+                                <input type="file" id="myFile" name="filename">
+                              </form>
+                        </div>
+
+                        <div class="upload_file_box mt-5">
+                            <h5 class="semi_600_text">Upload Back License Image *</h5>
+                            <p class="payment_blnc_p">Photo must contain a paper on which "FWO" should be written.</p>
+                            <form action="">
+                                <input type="file" id="myFile" name="filename">
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i]; if (openDropdown.classList.contains('show')) { openDropdown.classList.remove('show'); }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Shortcut Icon -->
+    <link rel=" shortcut icon" href="assets/logo.png" type="image/png">
+
+    <title>Earnings</title>
+</head>
+
+<body>
+    <section class="home_bg">
+        <header style="background-color: white;">
+            <!-- Navbar -->
+
+            <!-- Container wrapper -->
+            <div class="row">
+                <!-- Toggle button -->
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <nav class="navbar navbar-expand-lg navbar-light nav_pos">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <!-- <i class="fas fa-bars"></i> -->
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand mt-lg-0" href="#">
+                            <!-- Navbar brand -->
+                            <img src="/assets/Find-Writers-Online-black-transparent.png" height="15" alt=""
+                                loading="lazy" class="logo_pos" />
+                        </a>
+                        <!-- Collapsible wrapper -->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <!-- Left links -->
+                            <ul class="navbar-nav  mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <img src="/assets/home-icon.png" alt="" class="nav_icon">
+                                    <a class="nav-link" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <img src="/assets/content-icon.png" alt="" class="nav_icon">
+                                    <a class="nav-link" href="#">Write Content</a>
+                                </li>
+                                <li class="nav-item">
+                                    <img src="/assets/contact-us-icon.png" alt="" class="nav_icon">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                            <!-- Left links -->
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="d-flex align-items-center justify-content-end avatar_postion">
+
+                        <!-- Notifications -->
+                        <a type="button" class="notification_btn position-relative">
+                            <img src="/assets/chat.png" alt="">
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                2
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+
+                        <a type="button" class="notification_btn position-relative">
+                            <img src="/assets/bell-icon.png" alt="">
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                2
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+
+                        <!-- Avatar Dropdown -->
+                        <div class="dropdown">
+                            <a class="dropdown-toggle d-flex align-items-center hidden-arrow avatar dropbtn"
+                                onclick="myFunction()">
+                                <img src="/assets/sarah.png" class="" height="25" alt="" loading="lazy" />
+                            </a>
+                            <ul id="myDropdown" class="dropdown-content">
+                                <li>
+                                    <a class="dropdown-item" href="#">My Articles</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">My Invitations</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">My Settings</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Email Preference</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right elements -->
+            </div>
+            <!-- Container wrapper -->
+
+            <!-- Navbar -->
+        </header>
+
+        <section class="dashboard">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="profile_section">
+                        <p class="txt_edit_profile"><a href="#editprofile" class="edit_profile">Edit Profile</a></p>
+
+                        <div class="text-center">
+                            <img src="/assets/sarah.png" alt="" class="profile_pic">
+                            <h6 class="profile_name">Sarah Loren</h6>
+                            <p class="profile_profession_text">Proffessional Writer</p>
+                        </div>
+
+                        <div class="profile_sect2">
+                            <div class="client_sect">
+                                <p class="profile_profession_text">client</p>
+                                <h6 class="semibold_16p">12</h6>
+                            </div>
+                            <div class="vertical_line"></div>
+                            <div class="articles_sect">
+                                <p class="profile_profession_text">Articles</p>
+                                <h6 class="semibold_16p">23</h6>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h6 class="profile_profession_text">WRITER’S RATING</h6>
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <span class="rating_level">Bronze</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="credit_sect">
+                            <h6>CREDIT BALANCE</h6>
+                            <div class="credit_box">
+                                <h6 class="money_text">$ 3.00</h6>
+                                <h6 class="add_money_text">Add Money</h6>
+                            </div>
+                        </div>
+
+                        <div class="messages_sect">
+                            <h6 class="profile_profession_text">MESSAGES</h6>
+                            <div class="row mt-4">
+                                <div class="col-lg-10">
+                                    <h6 class="add_money_text">View Messages</h6>
+                                </div>
+                                <div class="col-lg-2">
+                                    <span class="messages_span">2</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="article_section earning_section">
+                        <h3 class="quiz_head_text">Writer's Balance</h3>
+                        <h6 class="semi_600_text">Your current writer balance is: <span
+                                style="color: #5973CC;">$0.00</span></h6>
+                        <p class="payment_blnc_p"><b>Please NOTE:</b> You must have at least $100.00 in your balance to
+                            trigger a payment. End of
+                            month payments are paid on the last day of the month around midnight via PayPal to your
+                            registered email address. Mid-month payments are paid around the 15th of every month to your
+                            registered email address by PayPal.</p>
+
+                        <div class="Payment_freq_box">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <div class="payment_month_part">
+                                        <p class="payment_blnc_p">Please set your payment frequency here:</p>
+                                        <input type="text" id="form6Example4" class="form-control"
+                                            placeholder="End of month" list="payment_month" />
+                                        <datalist id="payment_month">
+                                            <option value="1">
+                                            <option value="2">
+                                            <option value="3">
+                                            <option value="4">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mt-2">
+                                    <button type="submit" class="edit_sett_btn_blue">Save</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="quiz_head_text">Affiliate Referrals and Balance</h3>
+                            <p class="payment_blnc_p">As a Writer for FindWritersOnline, you are automatically
+                                registered within our Affiliate Program. As an affiliate of FindWritersOnline you will
+                                earn $5 credited to you instantly plus 8% monthly commission on writer's earnings for a
+                                year on every person/business whom you refer to us who purchases and accepts at least
+                                one content writing project or more. There is no limit to the number of business content
+                                requester referrals you can make and there is no cap on monthly earnings to you.
+                            </p>
+                            <p class="payment_blnc_p"><b>Your Affiliate Link to promote is:</b>
+                                https://www.findwritersonline.com?aid=ahmadk873<br>
+                                Get <b>additional banners and links</b> to promote by <a href=""> clicking here</a><br>
+                                <b>Total number of referrals you've made (All-time):</b> 0<br>
+                                <b>Total number of referrals you've made this month:</b> 0<br>
+                                <b>Your current affiliate referral balance owed to you is:</b> $0.00
+                            </p>
+                            <p class="payment_blnc_p"><b>Please NOTE:</b> You must have at least <b>$100.00</b> in your
+                                affiliate balance above to trigger an
+                                automatic monthly affiliate payment. Monthly affiliate payments are paid the first of
+                                every month also to your registered email address by PayPal.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i]; if (openDropdown.classList.contains('show')) { openDropdown.classList.remove('show'); }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
